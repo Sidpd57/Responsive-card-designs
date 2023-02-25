@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: #9DC08B;
+}
+
+.card {
+    box-shadow: 0 0  20px rgba(128, 128, 128, 0.459);
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FDD36A;
+    color: #443C68;
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+.profile-name {
+    font-size: 2rem;
+    line-height: 1.1;
+    letter-spacing: 0.7px;
+    margin: 0.75rem auto;
+}
+
+.profile-name::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 2.25em;
+    background-color: #443C68;
+    margin: 0.75rem auto;
+    opacity: 0.45;
+}
+
+.profile-position {
+    margin: 0.5rem auto;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    /* font-size: 0.8rem; */
+    color: #443c68d4;
+}
+
+.profile-image {
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.social-list {
+    display: flex;
+    list-style: none;
+    width: 125px;
+    /* border: 2px solid red; */
+    justify-content: space-around;
+    margin: 0 auto;/* for centering */
+}
+
+.social-link {
+    color: #0081C9;
+    opacity: 0.6;
+    font-size: 1.125rem;
+}
+
+.social-link:hover,
+.social-link:focus {
+    opacity: 1;
+}
+
+@media (min-width: 600px) {
+    .card {
+        flex-direction: row;
+    }
+    .profile-main {
+        text-align: left;
+        margin-left: 1.5rem;
+    }
+    .profile-name::after {
+        margin-left: 0;
+    }
+}
+
